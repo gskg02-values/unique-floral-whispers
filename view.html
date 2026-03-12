@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floral Resonances | The Comparison</title>
+    <style>
+        /* Minimalist Museum Style */
+        body {
+            margin: 0;
+            background-color: #fcfcfc;
+            font-family: 'Georgia', serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-nav {
+            position: sticky;
+            top: 0;
+            background: rgba(252, 252, 252, 0.95);
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            z-index: 100;
+            border-bottom: 1px solid #eee;
+        }
+
+        .back-home {
+            text-decoration: none;
+            color: #888;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.3s;
+        }
+
+        .back-home:hover { color: #000; }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            padding: 80px 0;
+        }
+
+        /* The Horizontal Comparison Row */
+        .comparison-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 150px; /* Large gap for a "quiet" feel */
+            gap: 40px;
+        }
+
+        .image-box {
+            flex: 1;
+            text-align: center;
+            overflow: hidden; /* Clips the zoom effect */
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 1.2s cubic-bezier(0.2, 1, 0.3, 1);
+            cursor: crosshair;
+        }
+
+        /* Zoom on hover as per your plan */
+        .gallery-img:hover {
+            transform: scale(1.15);
+        }
+
+        .label {
+            margin-top: 15px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            opacity: 0.4;
+        }
+
+        /* Scroll Progress Indicator */
+        .scroll-text {
+            position: fixed;
+            left: 20px;
+            bottom: 50%;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            opacity: 0.2;
+            text-transform: uppercase;
+        }
+
+        /* Responsive for Mobile */
+        @media (max-width: 768px) {
+            .comparison-row {
+                flex-direction: column;
+                gap: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-nav">
+        <a href="index.html" class="back-home">← Return to Home</a>
+    </div>
+
+    <div class="scroll-text">Vertical Scrolling</div>
+
+    <div class="container">
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower1.jpg" class="gallery-img" alt="Seen 1">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image1.jpg" class="gallery-img" alt="Unseen 1">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower2.jpg" class="gallery-img" alt="Seen 2">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image2.jpg" class="gallery-img" alt="Unseen 2">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower3.jpg" class="gallery-img" alt="Seen 3">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image3.jpg" class="gallery-img" alt="Unseen 3">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower4.jpg" class="gallery-img" alt="Seen 4">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image4.jpg" class="gallery-img" alt="Unseen 4">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower5.jpg" class="gallery-img" alt="Seen 5">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image5.jpg" class="gallery-img" alt="Unseen 5">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower6.jpg" class="gallery-img" alt="Seen 6">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image6.jpg" class="gallery-img" alt="Unseen 6">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower7.jpg" class="gallery-img" alt="Seen 7">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image7.jpg" class="gallery-img" alt="Unseen 7">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower8.jpg" class="gallery-img" alt="Seen 8">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image8.jpg" class="gallery-img" alt="Unseen 8">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower9.jpg" class="gallery-img" alt="Seen 9">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image9.jpg" class="gallery-img" alt="Unseen 9">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower10.jpg" class="gallery-img" alt="Seen 10">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image10.jpg" class="gallery-img" alt="Unseen 10">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower11.jpg" class="gallery-img" alt="Seen 11">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image11.jpg" class="gallery-img" alt="Unseen 11">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower12.jpg" class="gallery-img" alt="Seen 12">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image12.jpg" class="gallery-img" alt="Unseen 12">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower13.jpg" class="gallery-img" alt="Seen 13">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image13.jpg" class="gallery-img" alt="Unseen 13">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower14.jpg" class="gallery-img" alt="Seen 14">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image14.jpg" class="gallery-img" alt="Unseen 14">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower15.jpg" class="gallery-img" alt="Seen 15">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image15.jpg" class="gallery-img" alt="Unseen 15">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower16.jpg" class="gallery-img" alt="Seen 16">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image16.jpg" class="gallery-img" alt="Unseen 16">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower17.jpg" class="gallery-img" alt="Seen 17">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image17.jpg" class="gallery-img" alt="Unseen 17">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower18.jpg" class="gallery-img" alt="Seen 18">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image18.jpg" class="gallery-img" alt="Unseen 18">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower19.jpg" class="gallery-img" alt="Seen 19">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image19.jpg" class="gallery-img" alt="Unseen 19">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower20.jpg" class="gallery-img" alt="Seen 20">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image20.jpg" class="gallery-img" alt="Unseen 20">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower21.jpg" class="gallery-img" alt="Seen 21">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image21.jpg" class="gallery-img" alt="Unseen 21">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower22.jpg" class="gallery-img" alt="Seen 22">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image22.jpg" class="gallery-img" alt="Unseen 22">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower23.jpg" class="gallery-img" alt="Seen 23">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image23.jpg" class="gallery-img" alt="Unseen 23">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower24.jpg" class="gallery-img" alt="Seen 24">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image24.jpg" class="gallery-img" alt="Unseen 24">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower25.jpg" class="gallery-img" alt="Seen 25">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image25.jpg" class="gallery-img" alt="Unseen 25">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower26.jpg" class="gallery-img" alt="Seen 26">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image26.jpg" class="gallery-img" alt="Unseen 26">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower27.jpg" class="gallery-img" alt="Seen 27">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image27.jpg" class="gallery-img" alt="Unseen 27">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower28.jpg" class="gallery-img" alt="Seen 28">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image28.jpg" class="gallery-img" alt="Unseen 28">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower29.jpg" class="gallery-img" alt="Seen 29">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image29.jpg" class="gallery-img" alt="Unseen 29">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower30.jpg" class="gallery-img" alt="Seen 30">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image30.jpg" class="gallery-img" alt="Unseen 30">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower31.jpg" class="gallery-img" alt="Seen 31">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image31.jpg" class="gallery-img" alt="Unseen 31">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower32.jpg" class="gallery-img" alt="Seen 32">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image32.jpg" class="gallery-img" alt="Unseen 32">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower33.jpg" class="gallery-img" alt="Seen 33">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image33.jpg" class="gallery-img" alt="Unseen 33">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower34.jpg" class="gallery-img" alt="Seen 34">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image34.jpg" class="gallery-img" alt="Unseen 34">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower35.jpg" class="gallery-img" alt="Seen 35">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image35.jpg" class="gallery-img" alt="Unseen 35">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="image-box">
+                <img src="seen/flower36.jpg" class="gallery-img" alt="Seen 36">
+                <div class="label">Seen</div>
+            </div>
+            <div class="image-box">
+                <img src="unseen/image36.jpg" class="gallery-img" alt="Unseen 36">
+                <div class="label">Unseen</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
