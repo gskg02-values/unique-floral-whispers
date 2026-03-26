@@ -2,7 +2,7 @@
 
 
 
-THE UNSAID is a quiet reflective space curated by a student of nature.
+THE SEEN, UNSEEN,UNSAID is a quiet reflective space curated by a student of nature.
 
 
 
